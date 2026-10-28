@@ -118,7 +118,7 @@ public class PlayerMovement : MonoBehaviour
     {
         float boxCastDistance = 0.1f;
         float delay = 0.05f;
-        return Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0f, Vector2.down, boxCastDistance, groundLayer) && rb.linearVelocity.y < delay;
+        return Physics2D.BoxCast(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x * 0.8f, boxCollider.bounds.size.y), 0f, Vector2.down, boxCastDistance, groundLayer) && rb.linearVelocity.y < delay;
 
     }
 

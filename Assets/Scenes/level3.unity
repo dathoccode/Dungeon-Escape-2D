@@ -1258,6 +1258,7 @@ GameObject:
   - component: {fileID: 496800119}
   - component: {fileID: 496800118}
   - component: {fileID: 496800117}
+  - component: {fileID: 496800120}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1425,7 +1426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpForce: 7
+  jumpForce: 10
   dashForce: 3
   dashTime: 0.2
   groundLayer:
@@ -1783,6 +1784,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &496800120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496800107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f6258c8f5cbcc34a8866c149fd09152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSkinManager
+  animator: {fileID: 496800113}
+  sprite: {fileID: 496800108}
+  skins:
+  - {fileID: 11400000, guid: ef2cacce5c2c92c4181b25c80fb79fd8, type: 2}
+  - {fileID: 11400000, guid: 8e4e689f7a739aa409b3a6104add3e0d, type: 2}
+  - {fileID: 11400000, guid: 3f6373c44ccc90a499864ecf76ac328b, type: 2}
+  - {fileID: 11400000, guid: 6b7a2fc8e09f2a94d9eccabb1e595a50, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4394,9 +4414,9 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 857044465
+  m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 1.5, y: 1.5, z: 0}

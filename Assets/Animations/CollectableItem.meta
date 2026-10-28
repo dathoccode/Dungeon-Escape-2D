@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Pixel Adventure 1/Scenes.meta
+guid: dbc7f956d9ee8744ba00759404b21d27
+========
 guid: 28633ff50da598c4cb12a0336aaaad5e
+>>>>>>>> Player Skin Switch. (Test: Press J to change a random skin):Assets/Animations/CollectableItem.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
