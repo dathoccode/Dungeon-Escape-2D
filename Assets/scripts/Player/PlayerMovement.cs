@@ -36,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
 
     private int numberOfJumps = 2;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -45,7 +44,6 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Move();
@@ -121,6 +119,11 @@ public class PlayerMovement : MonoBehaviour
         float boxCastDistance = 0.1f;
         float delay = 0.05f;
         return Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0f, Vector2.down, boxCastDistance, groundLayer) && rb.linearVelocity.y < delay;
+
+    }
+
+    private void SwitchSkin()
+    {
 
     }
 }
