@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58b7ff202c9bb2d469314d3b5b0b22b0, type: 3}
   m_Name: NinjaFrog
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSkin
-  skinName: 
-  sprite: {fileID: 0}
-  controller: {fileID: 0}
+  skinName: NinjaFrog
+  sprite: {fileID: -6367560908665664636, guid: cd947491a13509945aa1b644f9db3ef2, type: 3}
+  controller: {fileID: 22100000, guid: c050d7495f6cd35449bf0dcec062f5f6, type: 2}

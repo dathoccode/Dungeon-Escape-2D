@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58b7ff202c9bb2d469314d3b5b0b22b0, type: 3}
   m_Name: MaskDude
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSkin
-  skinName: 
-  sprite: {fileID: 0}
-  controller: {fileID: 0}
+  skinName: MaskDude
+  sprite: {fileID: -6367560908665664636, guid: 3750f45c844123341b9a777a96cb1eca, type: 3}
+  controller: {fileID: 22100000, guid: 4c38055377e80cc418c806aa83b94988, type: 2}

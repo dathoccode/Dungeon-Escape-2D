@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58b7ff202c9bb2d469314d3b5b0b22b0, type: 3}
   m_Name: VirtualGuy
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSkin
-  skinName: 
-  sprite: {fileID: 0}
-  controller: {fileID: 0}
+  skinName: VirtualGuy
+  sprite: {fileID: -6367560908665664636, guid: 40de9a8703e2e5a47882b0b86451c741, type: 3}
+  controller: {fileID: 22100000, guid: 772281f6c66995a4ea537a10d604f9f6, type: 2}
