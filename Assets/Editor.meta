@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Editor.meta
 guid: e90582cb143f85e48881a38af91add94
+========
+guid: c7ea3465cb663574fafd8b6fad016243
+>>>>>>>> master:Assets/Sprites/Main Characters/Captain Clown.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

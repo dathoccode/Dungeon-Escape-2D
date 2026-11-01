@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/UI/cursor.png.meta
 guid: 1c105f8f9e1564d4fbd694e9bf834564
+========
+guid: 1ec63af3ee298d54594e05df07eb17da
+>>>>>>>> master:Assets/Sprites/UI/left_nav_arrow.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/UI/left_nav_arrow.png.meta
 guid: 1ec63af3ee298d54594e05df07eb17da
+========
+guid: 1c105f8f9e1564d4fbd694e9bf834564
+>>>>>>>> master:Assets/Sprites/UI/cursor.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -21,7 +25,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -54,7 +58,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 7
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1

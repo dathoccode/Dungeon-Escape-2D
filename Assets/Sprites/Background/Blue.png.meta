@@ -51,7 +51,11 @@ TextureImporter:
       213: -8331784581222038874
     second: Blue_15
   externalObjects: {}
+<<<<<<< HEAD
   serializedVersion: 13
+=======
+  serializedVersion: 12
+>>>>>>> master
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -115,7 +119,11 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 1
   platformSettings:
+<<<<<<< HEAD
   - serializedVersion: 4
+=======
+  - serializedVersion: 3
+>>>>>>> master
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 1024
     resizeAlgorithm: 0
@@ -128,7 +136,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 4
+=======
+  - serializedVersion: 3
+>>>>>>> master
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -141,7 +153,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 4
+=======
+  - serializedVersion: 3
+>>>>>>> master
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -154,7 +170,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 4
+=======
+  - serializedVersion: 3
+>>>>>>> master
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -167,7 +187,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 4
+=======
+  - serializedVersion: 3
+>>>>>>> master
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -180,6 +204,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 1024
@@ -206,6 +231,8 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+>>>>>>> master
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -220,7 +247,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -242,7 +272,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -264,7 +297,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -286,7 +322,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -308,7 +347,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -330,7 +372,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -352,7 +397,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -374,7 +422,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -396,7 +447,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -418,7 +472,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -440,7 +497,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -462,7 +522,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -484,7 +547,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -506,7 +572,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -528,7 +597,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -550,7 +622,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+<<<<<<< HEAD
       customData: 
+=======
+>>>>>>> master
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -562,7 +637,10 @@ TextureImporter:
       edges: []
       weights: []
     outline: []
+<<<<<<< HEAD
     customData: 
+=======
+>>>>>>> master
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -572,8 +650,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
     spriteCustomMetadata:
       entries: []
+=======
+>>>>>>> master
     nameFileIdTable:
       Blue_0: -6429493399158520243
       Blue_1: 3648764528808031850

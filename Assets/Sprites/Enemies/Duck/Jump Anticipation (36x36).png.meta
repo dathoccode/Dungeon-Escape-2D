@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/Enemies/Duck/Jump Anticipation (36x36).png.meta
 guid: aa5a5b60a4e0e604595df973aaee5f94
+========
+guid: eaff1c9704f34cb4183518102379ecd8
+>>>>>>>> master:Assets/Sprites/Main Characters/Captain Clown/Crouch.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +38,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -136,13 +140,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/Enemies/Duck/Jump Anticipation (36x36).png.meta
       name: Jump Anticipation (36x36)_0
+========
+      name: Crouch_0
+>>>>>>>> master:Assets/Sprites/Main Characters/Captain Clown/Crouch.png.meta
       rect:
         serializedVersion: 2
         x: 1
         y: 0
+<<<<<<<< HEAD:Assets/Sprites/Enemies/Duck/Jump Anticipation (36x36).png.meta
         width: 34
         height: 27
+========
+        width: 66
+        height: 42
+>>>>>>>> master:Assets/Sprites/Main Characters/Captain Clown/Crouch.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,13 +163,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<<< HEAD:Assets/Sprites/Enemies/Duck/Jump Anticipation (36x36).png.meta
       spriteID: 2b22dfdf3ca83064da90c2fd48a9634b
       internalID: -476527172
+========
+      spriteID: bdbb619dca37f0247bc0ad767ef05c9f
+      internalID: 2084612039
+>>>>>>>> master:Assets/Sprites/Main Characters/Captain Clown/Crouch.png.meta
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/Enemies/Duck/Jump Anticipation (36x36).png.meta
       name: Jump Anticipation (36x36)_1
       rect:
         serializedVersion: 2
@@ -164,6 +183,15 @@ TextureImporter:
         y: 0
         width: 108
         height: 24
+========
+      name: Crouch_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 66
+        height: 42
+>>>>>>>> master:Assets/Sprites/Main Characters/Captain Clown/Crouch.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,8 +199,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<<< HEAD:Assets/Sprites/Enemies/Duck/Jump Anticipation (36x36).png.meta
       spriteID: 0f6f34f3d717132468ff10e07747ed9e
       internalID: -661410860
+========
+      spriteID: 5eda5eec322a68e45ae8aee50ff838dd
+      internalID: 1264778435
+>>>>>>>> master:Assets/Sprites/Main Characters/Captain Clown/Crouch.png.meta
       vertices: []
       indices: 
       edges: []
@@ -188,8 +221,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+<<<<<<<< HEAD:Assets/Sprites/Enemies/Duck/Jump Anticipation (36x36).png.meta
       Jump Anticipation (36x36)_0: -476527172
       Jump Anticipation (36x36)_1: -661410860
+========
+      Crouch_0: 2084612039
+      Crouch_1: 1264778435
+>>>>>>>> master:Assets/Sprites/Main Characters/Captain Clown/Crouch.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

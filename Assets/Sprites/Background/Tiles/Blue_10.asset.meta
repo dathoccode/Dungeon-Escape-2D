@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/Background/Tiles/Blue_10.asset.meta
 guid: 7ac7ea7af7481c34492e602b0421e4ed
+========
+guid: a3c0a3ce12daaf9489126d85fba69bb9
+>>>>>>>> master:Assets/Sprites/Background/Tiles/Blue_0.asset.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Animations/Environment.meta
 guid: 90a5ee90dbbe6874fb28d4888b4f40c2
+========
+guid: 183b8720e79d57b46ac47ea2faa6903b
+>>>>>>>> master:Assets/Sprites/Background/Tiles.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
