@@ -133,8 +133,6 @@ public class VirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandler,
 
     public void SetJoystickType(JoystickType newJoystickType)
     {
-        ResetJoystick();
-
         joystickType = newJoystickType;
         if (joystickType == JoystickType.Floating)
         {
@@ -148,5 +146,6 @@ public class VirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandler,
             touchArea.anchoredPosition = new Vector2(300, 300);
             touchArea.sizeDelta = new Vector2(400, 400);
         }
+        ResetJoystick();
     }
 }
