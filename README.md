@@ -4,7 +4,6 @@ A pixel adventure themed 2D platformer game made using Unity Engine
 
 ## Demo
 
-[Play on itch](https://mockjoke.itch.io/pixel-adventure)
 
 <p align="center">
     <img src="README-Resources/Start-Screen.png" alt="Start-Screen" width="300px">
@@ -22,7 +21,7 @@ A pixel adventure themed 2D platformer game made using Unity Engine
 <br>
 
 <div align="center">
-  <a href="https://youtu.be/CdCLFUjtBYA" target="_blank">Demo Video</a>
+  <a href="" target="_blank">Demo Video</a>
 </div>
 
 ## Features
@@ -36,17 +35,6 @@ A pixel adventure themed 2D platformer game made using Unity Engine
 - Checkpoint system & respawn
 - Simple PlayerPrefs based save system covering all necessary fields
 - UI/UX for game states (win, lose, pause), health, title screen etc.
-
-### TODO:
-
-- [x] Upgrade to new input system
-- [ ] Gamepad support for UI/UX 
-- [ ] Input rebinding
-- [x] Wall Climb & Jump
-- [ ] More unique enemies
-- [ ] Background scrolling
-- [ ] Player character with combat support
-- [ ] Screen Transition Fade In/out
 
 ## Credits & Attributions
 
@@ -65,8 +53,3 @@ A pixel adventure themed 2D platformer game made using Unity Engine
 ### Disclaimer
 
 This project uses various assets obtained from different sources. While efforts have been made to ensure proper attribution, if any attribution is missing or incorrect, please contact me immediately so that proper credit can be given or the asset can be removed if necessary.
-
-## License
-
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file.
-
