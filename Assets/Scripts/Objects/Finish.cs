@@ -8,7 +8,10 @@ public class Finish : MonoBehaviour
     
     [Header("Manager Refs")]
     [SerializeField] private CheckpointManager checkpointManager;
-    
+
+    [Header("Level Completion")]
+    [SerializeField] private HUDMenu hudMenu;
+
     private bool levelCompleted = false;
     private static readonly int onCompleteAnim = Animator.StringToHash("OnComplete");
 
@@ -25,6 +28,11 @@ public class Finish : MonoBehaviour
     {
         if (collision.gameObject.name == "Player" && !levelCompleted)
         {
+            if (collision.gameObject.GetComponent<ItemCollector>().GetKeys() < 3)
+            {
+                hudMenu.ShowMessage("You need to collect all 3 keys to finish the level!");
+                return;
+            }
             animator.SetTrigger(onCompleteAnim);
             AudioManager.Instance.PlaySound(AudioType.levelFinish);
             confetti.SetActive(true);
