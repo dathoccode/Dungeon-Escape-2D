@@ -1,47 +1,138 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
 {
+    [Header("Components")]
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Animator animator;
+    [SerializeField] private BoxCollider2D boxCollider;
+    
+    [Header("Life counts")]
+    [SerializeField] private int LifeCount = 3;
+    [SerializeField] private int maxLifeBound = 100;
+    [SerializeField] private TextMeshProUGUI heartsCount;
+    // [SerializeField] private GameObject[] hearts;
+    
+    [Header("Respawn Fields")]
+    [SerializeField] private Vector3 initSpawnPos;
+    [SerializeField] private Vector3 respawnOffset;
+    
+    [Header("Manager Refs")]
+    [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private GameOverMenu gameOverMenu;
+    [SerializeField] private CheckpointManager checkpointManager;
 
-    private Animator anim;
-    private Rigidbody2D rb;
+    [SerializeField] private CharacterDataSO charData;
+    
+    private static readonly int deathAnim = Animator.StringToHash("death");
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        if (rb == null)
+            rb = GetComponent<Rigidbody2D>();
+        
+        if (animator == null)
+            animator = GetComponent<Animator>();
+
+        if (boxCollider == null)
+            boxCollider = GetComponent<BoxCollider2D>();
+
+        if (playerMovement == null)
+            playerMovement = GetComponent<PlayerMovement>();
+
+        if (gameOverMenu == null)
+            gameOverMenu = FindFirstObjectByType<GameOverMenu>();
+
+        if (checkpointManager == null)
+            checkpointManager = FindFirstObjectByType<CheckpointManager>();
+
+        int initLifeCnt = charData.playerLifeData.InitLifeCount;
+        LifeCount = PlayerPrefs.GetInt("LifeCount", initLifeCnt);
+        PlayerPrefs.SetInt("LifeCount", LifeCount);
+        
+        maxLifeBound = charData.playerLifeData.MaxLivesBound;
+        
+        // SetHearts();
+        UpdateHeartsCountsUI();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void Die()
     {
-            if (collision.gameObject.CompareTag("Trap") || collision.gameObject.CompareTag("Enemy"))
-            {
-                Die();
-            }
-           
+        boxCollider.enabled = false;
+        CameraShaker.Instance.ShakeCamera(5f, 0.25f);
+        AudioManager.Instance.PlaySound(AudioType.characterDeath);
+        animator.SetTrigger(deathAnim);
+
+        LoseLife();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void LoseLife()
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (LifeCount > 0)
         {
-            // kill the mob
-            collision.gameObject.GetComponent<EnemyLife>().Die();
+            LifeCount--;
+        }
+        
+        PlayerPrefs.SetInt("LifeCount", LifeCount);
+    }
+
+    public void GiveLife(int count = 1)
+    {
+        if (LifeCount < maxLifeBound)
+        {
+            LifeCount += count;
+        }
+        
+        PlayerPrefs.SetInt("LifeCount", LifeCount);
+    }
+
+    // private void SetHearts()
+    // {
+    //     for (int i = 0; i < LifeCount; i++)
+    //     {
+    //         hearts[i].SetActive(true);
+    //     }
+    // }
+
+    // private void DecreaseHearts()
+    // {
+    //     hearts[LifeCount].SetActive(false);
+    // }
+
+    private void UpdateHeartsCountsUI()
+    {
+        heartsCount.text = $"{LifeCount}";
+    }
+    
+    private void CheckLifeStatus()
+    {
+        // DecreaseHearts();
+        UpdateHeartsCountsUI();
+        
+        if (LifeCount > 0)
+        {
+            Respawn();
+        }
+        else
+        {
+            gameOverMenu.OpenGameOverMenu();
         }
     }
 
-    void Die()
+    private void Respawn()
     {
-        rb.bodyType = RigidbodyType2D.Static;
-        anim.SetTrigger("death");
-    }
-
-    void restartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+        boxCollider.enabled = true;
+        playerMovement.Flip(true);
+        
+        if (checkpointManager.hasPassedAnyCheckPoints())
+        {
+            Vector3 pos = checkpointManager.GetLatestCheckPoint().position;
+            transform.position = new Vector3(pos.x + respawnOffset.x, pos.y + respawnOffset.y, pos.z + respawnOffset.z);
+        }
+        else
+        {
+            transform.position = initSpawnPos;
+        }
     }
 }
