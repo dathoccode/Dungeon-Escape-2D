@@ -1,5 +1,4 @@
-# Pixel Adventure
-
+# Dungeon-escape
 A pixel adventure themed 2D platformer game made using Unity Engine
 
 ## Demo
