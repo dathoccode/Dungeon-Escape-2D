@@ -17,7 +17,8 @@ public class CharacterSelectionMenu : MonoBehaviour
     [SerializeField] private Button selectBtn;
     [SerializeField] private TextMeshProUGUI selectBtnText;
     [SerializeField] private CharacterDataSO charData;
-    
+    [SerializeField] private TextMeshProUGUI coinText;
+
     [Space]
     [SerializeField] private UnityEvent onClose;
     
@@ -32,6 +33,7 @@ public class CharacterSelectionMenu : MonoBehaviour
     void Start()
     {
         ShowCharacter(GetCurrCharIndex());
+        UpdateCountAmount();
     }
 
     public void OpenMenu()
@@ -90,8 +92,15 @@ public class CharacterSelectionMenu : MonoBehaviour
         }
         else
         {
-            selectBtn.interactable = false;
-            selectBtnText.text = $"Unlocks at Level{GetCharUnlockLvl(currChar)}";
+            if (PlayerPrefs.GetInt("Foods", 0) < GetCharUnlockPrice(currChar))
+            {
+                selectBtn.interactable = false;
+            }
+            else
+            {
+                selectBtn.interactable = true;
+            }
+            selectBtnText.text = $"Buy this character with {GetCharUnlockPrice(currChar)}";
         }
     }
 
@@ -128,8 +137,29 @@ public class CharacterSelectionMenu : MonoBehaviour
         return PlayerPrefs.GetInt("Character", 0);
     }
     
+    private void UpdateCountAmount()
+    {
+        int coins = PlayerPrefs.GetInt("Foods", 0);
+        coinText.text = $"x {coins}";
+    }
+
     public void SelectChar()
     {
+        if (!isCharAvailable(charData.characterData[currChar].charName))
+        {
+            int price = GetCharUnlockPrice(currChar);
+            int coins = PlayerPrefs.GetInt("Foods", 0);
+            if (coins >= price)
+            {
+                coins -= price;
+                PlayerPrefs.SetInt("Foods", coins);
+            }
+            else
+            {
+                Debug.Log("Not enough coins to unlock this character.");
+                return;
+            }
+        }
         PlayerPrefs.SetInt("Character", currChar);
         
         SetSelectBtnInteractivity();
@@ -142,7 +172,9 @@ public class CharacterSelectionMenu : MonoBehaviour
         int charIndex = charData.characterData.FindIndex( data => data.charName == characterName);
 
         int lvl = GetCharUnlockLvl(charIndex);
-        
+
+        int coin = PlayerPrefs.GetInt("Foods", 0);
+
         if (lvl <= LevelManager.Instance.GetLatestUnlockedLevelNo() + 1)
         {
             return true;
@@ -154,5 +186,10 @@ public class CharacterSelectionMenu : MonoBehaviour
     private int GetCharUnlockLvl(int charIndex)
     {
         return (int)charData.characterData[charIndex].unlocksAtLvl;
+    }
+
+    private int GetCharUnlockPrice(int charIndex)
+    {
+        return (int)charData.characterData[charIndex].unlockPrice;
     }
 }

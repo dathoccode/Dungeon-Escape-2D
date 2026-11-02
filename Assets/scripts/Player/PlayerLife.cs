@@ -87,6 +87,17 @@ public class PlayerLife : MonoBehaviour
         PlayerPrefs.SetInt("LifeCount", LifeCount);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Buff"))
+        {
+            AudioManager.Instance.PlaySound(AudioType.itemCollect);
+            LifeCount++;
+            UpdateHeartsCountsUI();
+            Destroy(collision.gameObject);
+        }
+    }
+
     // private void SetHearts()
     // {
     //     for (int i = 0; i < LifeCount; i++)
