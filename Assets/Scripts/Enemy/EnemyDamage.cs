@@ -3,9 +3,9 @@ using UnityEngine;
 public class EnemyDamage : MonoBehaviour
 {
     [Header("Components")]
-    [SerializeField] private Animator animator;
-    [SerializeField] private Collider2D enemyCollider;
-    private static readonly int dieAnim = Animator.StringToHash("Die");
+    [SerializeField] protected Animator animator;
+    [SerializeField] protected Collider2D enemyCollider;
+    protected static readonly int dieAnim = Animator.StringToHash("Die");
 
     void Awake()
     {
@@ -39,11 +39,11 @@ public class EnemyDamage : MonoBehaviour
         return Vector2.Dot(direction.normalized, testDirection) > 0.25f;
     }
 
-    public void Die()
+    public virtual void Die()
     {
         AudioManager.Instance.PlaySound(AudioType.enemyHit);
         animator.SetTrigger(dieAnim);
         enemyCollider.enabled = false;
-        Destroy(gameObject, 1.25f);
+        Destroy(transform.parent.gameObject, 1.25f);
     }
 }
