@@ -11,6 +11,7 @@ public class CharacterDataSO : ScriptableObject
         public Sprite charSprite;
         public RuntimeAnimatorController animatorController;
         public LevelName unlocksAtLvl;
+        public float unlockPrice;
         public float moveSpeed;
         public float jumpForce;
         public float extraJumpForce;
