@@ -4,7 +4,6 @@ public class Finish : MonoBehaviour
 {
     [Header("Components")]
     [SerializeField] private Animator animator;
-    [SerializeField] private GameObject confetti;
     
     [Header("Manager Refs")]
     [SerializeField] private CheckpointManager checkpointManager;
@@ -30,17 +29,17 @@ public class Finish : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<ItemCollector>().GetKeys() < 3)
             {
-                hudMenu.ShowMessage("You need to collect all 3 keys to finish the level!");
+                hudMenu.ShowMessage("Collect all keys to activate this portal!");
                 return;
             }
             animator.SetTrigger(onCompleteAnim);
             AudioManager.Instance.PlaySound(AudioType.levelFinish);
-            confetti.SetActive(true);
-            
+            hudMenu.ShowMessage("Congratulation for completing the level!");
+
             checkpointManager.ClearCheckpoints();
             
             levelCompleted = true;
-            Invoke(nameof(CompleteLevel), 2.15f);
+            Invoke(nameof(CompleteLevel), 1f);
         }
     }
 
