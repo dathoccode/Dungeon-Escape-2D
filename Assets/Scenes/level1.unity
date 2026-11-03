@@ -26256,8 +26256,8 @@ GameObject:
   - component: {fileID: 4158600306693449519}
   - component: {fileID: 126602483167428809}
   - component: {fileID: 5475085705567337965}
-  - component: {fileID: 1326905058533058652}
   - component: {fileID: 3661540230443383085}
+  - component: {fileID: 5481330920742860668}
   m_Layer: 8
   m_Name: AngryPig
   m_TagString: Enemy
@@ -26351,20 +26351,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4413903478178495379, guid: 58ee50092a6bca74a9a9cf3960f41d57, type: 3}
   m_PrefabInstance: {fileID: 969653154985438038}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1326905058533058652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325056030018971015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74faf3b45ab162b4599de1ca6af16531, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
-  animator: {fileID: 3743373304893042347}
-  enemyCollider: {fileID: 4158600306693449519}
 --- !u!4 &1681216327382983685 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2869570500947524833, guid: ad4d9c448fbb9e2459f1abce9dded855, type: 3}
@@ -26787,7 +26773,7 @@ Animator:
   m_GameObject: {fileID: 325056030018971015}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e15d5c46f17bc4347a1bbdaa0a3561ae, type: 2}
+  m_Controller: {fileID: 9100000, guid: 41bef9385cc00e34b8b8c67bf15c7864, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -26888,7 +26874,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.0625, y: 1.6875}
+    oldSize: {x: 1.9375, y: 1.75}
     newSize: {x: 2.0625, y: 1.6875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -27117,6 +27103,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7822013998292760487}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5481330920742860668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325056030018971015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 890b620b5a59f9e47b88dae3c2e6483f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AngryPigDamage
+  animator: {fileID: 3743373304893042347}
+  enemyCollider: {fileID: 4158600306693449519}
+  angryPigMovement: {fileID: 3661540230443383085}
+  angrySpeed: 8
 --- !u!50 &5912797058540902530
 Rigidbody2D:
   serializedVersion: 5
