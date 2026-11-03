@@ -30,7 +30,7 @@ public class Finish : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<ItemCollector>().GetKeys() < 3)
             {
-                hudMenu.ShowMessage("You need to collect all 3 keys to finish the level!");
+                hudMenu.ShowMessage("Collect all keys to activate this portal!");
                 return;
             }
             animator.SetTrigger(onCompleteAnim);
