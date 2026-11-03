@@ -1505,6 +1505,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7074810212961939117, guid: 0cc793c5610de314e9a3e2ade3e8d937, type: 3}
+      propertyPath: keysText
+      value: 
+      objectReference: {fileID: 1369474586}
+    - target: {fileID: 7074810212961939117, guid: 0cc793c5610de314e9a3e2ade3e8d937, type: 3}
       propertyPath: cherriesText
       value: 
       objectReference: {fileID: 1369474584}
@@ -6772,6 +6776,17 @@ MonoBehaviour:
 --- !u!114 &1369474585 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8240628118352361724, guid: 741469164a2c18446a3007ba806366bc, type: 3}
+  m_PrefabInstance: {fileID: 1369474583}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1369474586 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2403530254286523788, guid: 741469164a2c18446a3007ba806366bc, type: 3}
   m_PrefabInstance: {fileID: 1369474583}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

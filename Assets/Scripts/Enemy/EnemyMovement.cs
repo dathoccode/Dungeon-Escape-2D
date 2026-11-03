@@ -100,4 +100,14 @@ public class EnemyMovement : MonoBehaviour
         transform.position = new Vector3(transform.position.x + Time.deltaTime * _direction * speed,
             transform.position.y, transform.position.z);
     }
+
+    public void SetIdleDuration(float newIdleDuration)
+    {
+        idleDuration = newIdleDuration;
+    }
+
+    public void SetSpeed(float newSpeed)
+    {
+        speed = newSpeed;
+    }
 }
