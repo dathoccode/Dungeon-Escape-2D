@@ -4,7 +4,6 @@ public class Finish : MonoBehaviour
 {
     [Header("Components")]
     [SerializeField] private Animator animator;
-    [SerializeField] private GameObject confetti;
     
     [Header("Manager Refs")]
     [SerializeField] private CheckpointManager checkpointManager;
@@ -35,12 +34,12 @@ public class Finish : MonoBehaviour
             }
             animator.SetTrigger(onCompleteAnim);
             AudioManager.Instance.PlaySound(AudioType.levelFinish);
-            confetti.SetActive(true);
-            
+            hudMenu.ShowMessage("Congratulation for completing the level!");
+
             checkpointManager.ClearCheckpoints();
             
             levelCompleted = true;
-            Invoke(nameof(CompleteLevel), 2.15f);
+            Invoke(nameof(CompleteLevel), 1f);
         }
     }
 

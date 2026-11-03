@@ -23,7 +23,7 @@ public class LevelManager : MonoBehaviourSingleton<LevelManager>
     public void MarkLevelComplete()
     {
         // finding the index of the active level from the array of Levels
-        int currentSceneIndex = Array.FindIndex(Levels, level => level.ToString() == SceneManager.GetActiveScene().name);
+        int currentSceneIndex = Array.FindIndex(Levels, level => level.ToString().ToLower() == SceneManager.GetActiveScene().name.ToLower());
 
         SetLevelStatus(Levels[currentSceneIndex], LevelStatus.Completed);
 
