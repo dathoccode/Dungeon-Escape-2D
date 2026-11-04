@@ -14918,7 +14918,7 @@ MonoBehaviour:
   LifeCount: 3
   maxLifeBound: 100
   heartsCount: {fileID: 0}
-  initSpawnPos: {x: -0.11, y: 1, z: 0}
+  initSpawnPos: {x: 0.11, y: 1, z: 0}
   respawnOffset: {x: 0, y: 0, z: 0}
   playerMovement: {fileID: 7074810212961939107}
   gameOverMenu: {fileID: 0}
